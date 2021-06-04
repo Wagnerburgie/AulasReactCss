@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icone, Box, Button } from "../UI/index"
+import { Icone, Box, Botao } from "../UI/index"
 import styled from 'styled-components'
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
@@ -30,12 +30,12 @@ const Conta = () => {
         ) : null}
       </div>
 
-      <Button className="btn" onClick={toggleHandler}>
+      <Botao className="btn" onClick={toggleHandler}>
         <IconeMargim
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />
-      </Button>
+      </Botao>
     </Box>
   );
 };
