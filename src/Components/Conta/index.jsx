@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icone, Box, Botao } from "../UI/index"
+import { Icone, Box, Botao, Detalhe, Saldo } from "../UI/index"
 import styled from 'styled-components'
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
@@ -24,9 +24,9 @@ const Conta = () => {
           <Icone src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
-          <div className="saldo">
-            <span className="detalhe">R$</span> 0,00{" "}
-          </div>
+          <Saldo>
+            <Detalhe>R$</Detalhe> 0,00{" "}
+          </Saldo>
         ) : null}
       </div>
 
